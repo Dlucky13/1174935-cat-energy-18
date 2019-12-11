@@ -6,56 +6,62 @@
     </head>
     <body>
         <header class ="page-header">
-            <a href="page-header__main-logo">
+            <a class ="page-header__main-logo" href ="index.html">
                 <img class ="page-header__main-logo-image" src="source/img/logo-mobile-header-svg.svg" width="191" height="39" alt="логотип Cat energy">
             </a>
-            <div class ="main-nav__wrapper">
-                <nav class ="main-nav">
-                    <button class="main-nav__toggle" type="button">Открыть меню</button>
-                    <ul class ="main-nav__list site-list">
-                        <li class ="site-list__item">Главная</li>
-                        <li class ="site-list__item">Каталог продукции</li>
-                        <li class ="site-list__item">Подбор программы</li>
-                    </ul>
+            <nav class ="main-nav">
+                    <div class ="main-nav__wrapper">
+                        <button class="main-nav__toggle" type="button">Открыть меню</button>
+                        <ul class ="main-nav__list site-list">
+                            <li class ="site-list__item site-list__item-active">
+                                <a href="">Главная</a>
+                            </li>
+                            <li class ="site-list__item">
+                                <a href="catalog.html">Каталог продукции</a>
+                            </li>
+                            <li class ="site-list__item">
+                                <a href="programm.html">Подбор программы</a>
+                            </li>
+                        </ul>
+                    </div>
                 </nav>
-            </div>
         </header>
         <main class ="main-form">
-            <form class ="main-form form" method ="get" action="https://echo.htmlacademy.ru">
+            <form class ="main-form__form form" method ="get" action="https://echo.htmlacademy.ru">
                 <h2 class ="visually-hidden">Форма подбора программы для кота</h2>
-                <p class ="form-title heading">Подбор программы</p>
+                <p class ="form-title">Подбор программы</p>
                 <p class ="form-description">Заполните анкету и мы подберем программу питания для вашего кота</p>
                 <fieldset class ="form__cat-info cat-info">
-                    <label class= "cat-info__label heading" for ="alias">Имя:*</label>
+                    <label class= "cat-info__label" for ="alias">Имя:*</label>
                     <input class ="cat-info__item" type ="text" name ="cat-name" id ="alias" placeholder ="БАРСИК" required>
-                    <label class= "cat-info__label heading" for ="weight">Вес (кг):*</label>
+                    <label class= "cat-info__label" for ="weight">Вес (кг):*</label>
                     <input class ="cat-info__item" type ="text" name ="cat-weight" id ="weight" placeholder ="7" required>
-                    <label class= "cat-info__label heading" for ="age">Возраст (лет):</label>
+                    <label class= "cat-info__label" for ="age">Возраст (лет):</label>
                     <input class ="cat-info__item" type ="text" name ="cat-age" id ="age" placeholder ="7">
                 </fieldset>
                 <fieldset class ="form__goals goals">
-                    <label class ="goals__label heading" for ="radio-slim">Похудение</label>
+                    <label class ="goals__label" for ="radio-slim">Похудение</label>
                     <input class ="goals__radio" type ="radio" name ="goal" id ="radio-slim" value ="slim" checked>
-                    <label class ="goals__label heading" for ="radio-mass">Набор массы</label>
+                    <label class ="goals__label" for ="radio-mass">Набор массы</label>
                     <input class ="goals__radio" type ="radio" name ="goal" id ="radio-mass" value ="mass">
-                    <label class ="goals__label heading" for ="radio-help">Не знаю (Нужен ваш совет)</label>
+                    <label class ="goals__label" for ="radio-help">Не знаю (Нужен ваш совет)</label>
                     <input class ="goals__radio" type ="radio" name ="goal" id ="radio-help" value ="help">
                 </fieldset>
                 <fieldset class ="form__pet-owner cat-owner">
-                    <legend class ="cat-owner__title heading fieldset-legend">Контактные данные (владельца кота)</legend>
+                    <legend class ="cat-owner__title fieldset-legend">Контактные данные (владельца кота)</legend>
                     <label class ="cat-owner__mail-label" for ="cat-owner__mail">E-mail:*</label>
                     <input class ="cat-owner__mail cat-owner__mail-icon" type ="mail" name ="owner-mail" id ="cat-owner-mail" placeholder ="kuklachev@gmail.com" required>
                     <label class ="cat-owner__tel-label" for ="cat-owner__tel">Телефон:*</label>
                     <input class ="cat-owner__tel cat-owner__tel-icon" type ="tel" name ="owner-tel" id ="cat-owner-tel" placeholder ="8 (960) 900-60-90" required>
                 </fieldset>
                 <fieldset class ="form__about about">
-                    <legend class ="about__title heading fieldset-legend">Комментарий</legend>
-                    <textarea class ="about__text heading" name ="about-text" rows ="6">
+                    <legend class ="about__title fieldset-legend">Комментарий</legend>
+                    <textarea class ="about__text" name ="about-text" rows ="6">
                         Расскажите обо всех повадках кота
                     </textarea>
                 </fieldset>
                 <fieldset class ="form__additional-goods additional-goods">
-                    <legend class ="adittional-goods__title fieldset-legend">Дополнительно</legend>
+                    <legend class ="additional-goods__title fieldset-legend">Дополнительно</legend>
                     <label class ="additional-goods__label" for ="sugar-substitute">Сахарозаменитель</label>
                     <input class ="additional-goods__checkbox" type ="checkbox" name="sugar-substitute" id ="sugar-substitute" checked>
                     <label class ="additional-goods__label" for ="water">Питьевая вода</label>
@@ -71,7 +77,7 @@
         </main>
         <footer class ="page-footer">
             <section class ="page-footer__contacts contacts">
-                <p class ="contacts__partnership-text heading">приглашаем к сотрудничеству дилеров!</p>
+                <p class ="contacts__partnership-text">приглашаем к сотрудничеству дилеров!</p>
                 <address class ="contacts__adress">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
                 <a class ="contacts__map" href="">
                     <img class ="contacts__map-img" src ="source/img/map-mobile.png" alt ="ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
