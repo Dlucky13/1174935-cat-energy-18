@@ -1,0 +1,8 @@
+@mixin offset-reset {
+    margin: 0;
+    padding: 0;
+}
+
+@mixin font {
+    font-family: "Oswald", "Arial", sans-serif;
+}
