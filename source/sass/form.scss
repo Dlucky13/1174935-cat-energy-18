@@ -1,0 +1,14 @@
+.form-title {
+    font-family: $font;
+    @include offset-reset;
+    @include heading;
+}
+
+.form-description {
+    font-family: $font;
+    @include offset-reset;
+    font-size: 14px;
+    line-height: 18px;
+    text-transform: uppercase;
+    color: #111;
+}

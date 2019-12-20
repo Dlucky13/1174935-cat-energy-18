@@ -1,0 +1,14 @@
+.product-list {
+    @include offset-reset;
+    list-style: none;
+}
+
+.product-list__heading {
+    font-family: $font;
+    font-size: 16px;
+    line-height: 16px;
+    color: #222;
+    @include offset-reset;
+    font-weight: normal;
+    text-transform: uppercase;
+}

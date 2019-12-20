@@ -13,7 +13,7 @@
 
 .title-wrapper__heading {
     @include offset-reset;
-    @include font;
+    font-family: $font;
     margin-bottom: 19px;
     font-size: 36px;
     line-height: 36px;
@@ -22,7 +22,7 @@
 
   .title-wrapper__slogan {
     @include offset-reset;
-    @include font;
+    font-family: $font;
     font-size: 14px;
     line-height: 14px;
     text-transform: uppercase;
