@@ -1,38 +1,29 @@
 @import "mixins.scss";
 @import "variables.scss";
-
 @import "visually-hidden.scss";
-@import "site-list.scss";
-@import "title-wrapper.scss";
-@import "button.scss";
-@import "sport-programm.scss";
-@import "advantages.scss";
-@import "sample.scss";
-@import "table-stats.scss";
-@import "slider.scss";
-@import "page-footer.scss";
-@import "catalog.scss";
-@import "item.scss";
-@import "additional-goods.scss";
-@import "product-list.scss";
-@import "gift.scss";
-@import "form.scss";
-@import "cat-info.scss";
-@import "goals.scss";
-@import "fieldset-legend.scss";
-@import "cat-owner.scss";
-@import "about.scss";
-@import "additional-goods-fieldset.scss";
-@import "main-form.scss";
+@import "scafolding.scss";
 
-body {
-    min-width: 320px;
-    margin: 0;
-    padding: 0;
-    font-size: 14px;
-    line-height: 18px;
-    font-family: ArialMT, sans-serif;
-    color: #444;
-    font-style: normal;
-    background-color: #fff;
-}
+
+@import "./blocks/site-list.scss";
+@import "./blocks/title-wrapper.scss";
+@import "./blocks/button.scss";
+@import "./blocks/sport-programm.scss";
+@import "./blocks/advantages.scss";
+@import "./blocks/sample.scss";
+@import "./blocks/table-stats.scss";
+@import "./blocks/slider.scss";
+@import "./blocks/page-footer.scss";
+@import "./blocks/catalog.scss";
+@import "./blocks/item.scss";
+@import "./blocks/additional-goods.scss";
+@import "./blocks/product-list.scss";
+@import "./blocks/gift.scss";
+@import "./blocks/form.scss";
+@import "./blocks/cat-info.scss";
+@import "./blocks/goals.scss";
+@import "./blocks/fieldset-legend.scss";
+@import "./blocks/cat-owner.scss";
+@import "./blocks/about.scss";
+@import "./blocks/additional-goods-fieldset.scss";
+@import "./blocks/main-form.scss";
+@import "./blocks/item-data-table.scss";
