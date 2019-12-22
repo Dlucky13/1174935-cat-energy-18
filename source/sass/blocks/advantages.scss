@@ -1,0 +1,16 @@
+.advantages__title {
+    @include offset-reset;
+    font-family: $font;
+    @include heading;
+}
+
+.advantages__list {
+    @include offset-reset;
+    list-style: none;
+
+}
+
+.advantages__item {
+    min-height: 75px;
+
+}

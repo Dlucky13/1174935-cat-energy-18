@@ -3,24 +3,26 @@
     <head>
         <meta charset="utf-8">
         <title>Cat energy - Функциональное питание для котов </title>
+        <link href="https://fonts.googleapis.com/css?family=Oswald:400,500,600,700&display=swap&subset=cyrillic" rel="stylesheet">
+        <link rel ="stylesheet" href ="css/style.css">
     </head>
     <body>
         <header class ="page-header">
-            <a class ="page-header__main-logo" href ="index.html">
-                <img class ="page-header__main-logo-image" src="source/img/logo-mobile-header-svg.svg" width="191" height="39" alt="логотип Cat energy">
+            <a class ="page-header__main-logo" href ="#">
+                <img class ="page-header__main-logo-image" src="img/logo-mobile.svg" width="191" height="39" alt="логотип Cat energy">
             </a>
-            <nav class ="main-nav">
+                <nav class ="main-nav">
                     <div class ="main-nav__wrapper">
-                        <button class="main-nav__toggle" type="button">Открыть меню</button>
+                        <button class="main-nav__toggle visually-hidden" type="button">Открыть меню</button>
                         <ul class ="main-nav__list site-list">
                             <li class ="site-list__item site-list__item-active">
-                                <a href="">Главная</a>
+                                <a class ="site-list__link" href="index.html">Главная</a>
                             </li>
                             <li class ="site-list__item">
-                                <a href="catalog.html">Каталог продукции</a>
+                                <a class ="site-list__link" href="catalog.html">Каталог продукции</a>
                             </li>
                             <li class ="site-list__item">
-                                <a href="programm.html">Подбор программы</a>
+                                <a class ="site-list__link" href="form.html">Подбор программы</a>
                             </li>
                         </ul>
                     </div>
@@ -31,8 +33,8 @@
                 <h1 class ="catalog__heading">Каталог продукции</h1>
                 <ul class ="catalog__list ">
                     <li class = "catalog__item item">
-                        <h2 class ="catalog__heading">Cat Energy PRO 500 г</h2>
-                        <img class ="catalog__image" src ="/source/img/Cat Energy pro 500g-chicken.png">
+                        <h2 class ="item__heading">Cat Energy PRO 500 г</h2>
+                        <img class ="item__image" src ="/source/img/Cat Energy pro 500g-chicken.png">
                         <table class ="item-data-table">
                             <tr class ="item-data-table__row">
                                 <td class ="item-data-table__cell">Объём</td>
@@ -165,9 +167,9 @@
                     </li>
                 </ul>
                 <a class ="catalog__button show-more-button" href ="#"></a>
-                <p class ="show-more-button__description">Показать еще 100500 товаров</p>
+                <p class ="catalog__button-description catalog__button-description--show-more-button">Показать еще 100500 товаров</p>
                 <p class ="catalog__description">На самом деле вкусов гораздо больше!</p>
-                <a class ="catalog__link show-all-link" href ="#"></a>
+                <a class ="catalog__link button button--show-all-link" href ="#">Показать все</a>
             </section>
             <section class = "additional-goods">
                 <h2 class ="additional-goods__heading">Дополнительные товары</h2>
@@ -233,7 +235,7 @@
                 <ul class ="social__list">
                     <li class ="social__item social__item-vkontakte">Cat energy во Вконтакте</li>
                     <li class ="social__item social__item-instagram">Cat energy в Инстаграме</li>
-                    <li class ="social__item social__item-facebook">Cat energy в Фейсбуку</li>
+                    <li class ="social__item social__item-facebook">Cat energy в Фейсбуке</li>
                 </ul>
             </div>
             <div class ="page-footer__copyright copyright">

@@ -1,0 +1,11 @@
+@mixin offset-reset {
+    margin: 0;
+    padding: 0;
+}
+
+@mixin heading {
+    font-size: 36px;
+    line-height: 60px;
+    color: #111;
+    font-weight: normal;
+}

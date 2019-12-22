@@ -1,0 +1,26 @@
+.catalog__heading {
+    font-family: $font;
+    @include heading;
+    @include offset-reset;
+
+}
+
+.catalog__list {
+    list-style: none;
+    @include offset-reset;
+}
+
+.catalog__button-description {
+    font-family: $font;
+    font-size: 16px;
+    line-height: 20px;
+    color: #111;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.catalog__description {
+    font-size: 12px;
+    line-height: 16px;
+    text-align: center;
+}
