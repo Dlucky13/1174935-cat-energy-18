@@ -3,13 +3,34 @@
     @include offset-reset;
 }
 
+.sport-programm__item {
+    display: flex;
+    flex-direction: column;
+    background-color: #f2f2f2;
+    margin-bottom: 20px;
+    padding-top: 40px;
+    padding-left: 20px;
+    padding-right: 35px;
+    padding-bottom: 20px;
+}
+
 .sport-programm__title {
     font-family: $font;
     color: #111;
+    margin: 0;
+    margin-bottom: 35px;
+    padding-left: 72px;
     font-size: 24px;
     line-height: 37px;
     text-transform: uppercase;
     font-weight: normal;
+}
+
+.sport-programm__description {
+    margin: 0;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #d5d5d5;
 }
 
 .sport-programm__catalog-link {
@@ -19,4 +40,75 @@
     line-height: 16px;
     text-transform: uppercase;
     text-decoration: none;
+}
+
+// .sport-programm__wrapper {
+//     width: 280px;
+//     margin: 0 auto;
+// }
+
+@media (min-width: $tablet-width) {
+    .sport-programm__list {
+        margin-bottom: 50px;
+    }
+
+    .sport-programm__item {
+        padding-top: 80px;
+        padding-right: 285px;
+        padding-bottom: 60px;
+        padding-left: 55px;
+        margin-bottom: 30px;
+    }
+
+    .sport-programm__title {
+        padding: 0;
+        font-size: 36px;
+        line-height: 37px;
+        margin-bottom: 30px;
+    }
+
+    .sport-programm__description {
+        font-size: 16px;
+        line-height: 24px;
+        border-bottom: none;
+        padding: 0;
+        margin-bottom: 60px;
+    }
+
+    .sport-programm__catalog-link {
+        font-size: 20px;
+        line-height: 20px;
+    }
+}
+
+@media (min-width: $desktop-width) {
+    .sport-programm__list {
+        display: flex;
+        margin-bottom: 80px;
+    }
+
+    .sport-programm__item:first-child {
+        margin-right: 80px;
+    }
+
+    .sport-programm__list:nth-child(2) {
+        margin-right: 0;
+    }
+
+    .sport-programm__item {
+        width: 460px;
+        margin-bottom: 0;
+        padding-right: 55px;
+        padding-bottom: 60px;
+        padding-left: 50px;
+    }
+
+    .sport-programm__title {
+        margin-bottom: 80px;
+        text-align: center;
+    }
+
+    .sport-programm__description {
+        margin-bottom: 35px;
+    }
 }

@@ -1,0 +1,13 @@
+.copyright {
+    display: flex;
+}
+
+.copyright__info {
+    @include offset-reset;
+    font-size: 16px;
+    line-height: 16px;
+}
+
+.copyright__link {
+    @include offset-reset;
+}

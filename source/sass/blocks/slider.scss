@@ -1,7 +1,33 @@
-.slider__control {
+.slider {
+    margin-bottom: 35px;
+}
+
+.slider__label {
     font-family: $font;
     text-transform: uppercase;
     font-size: 16px;
     line-height: 20px;
     color: #111;
+}
+
+@media (min-width: $tablet-width) {
+    .slider {
+        background-color: #f2f2f2;
+    }
+
+    .slider__controls {
+        padding-left: 70px;
+        padding-right: 70px;
+        padding-bottom: 70px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .slider__label {
+        font-size: 20px;
+        line-height: 20px;
+        padding-bottom: 5px;
+        border-bottom: 1px dotted #eaeaea;
+    }
+
 }

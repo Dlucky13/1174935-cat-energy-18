@@ -3,12 +3,17 @@
     margin: 0;
     padding: 0;
     list-style: none;
+    display: flex;
+    flex-direction: column;
   }
 
   .site-list__item {
+    font-size: 20px;
+    line-height: 65px;
     min-height: 65px;
     width: 100%;
     text-align: center;
+    border-bottom: 1px solid #d5d5d5;
   }
 
   .site-list__link {
@@ -18,3 +23,32 @@
     font-weight: 500;
     font-family: $font;
   }
+
+@media (min-width: $tablet-width) {
+  .site-list {
+    flex-direction: row;
+    width: 440px;
+  }
+  .site-list__item {
+    display: flex;
+    font-size: 18px;
+    line-height: 25px;
+    min-height: 40px;
+    border-bottom: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .site-list {
+    width: 480px;
+  }
+
+  .site-list::after {
+    content: "";
+    background-image: url(../img/index-background-desktop@1x.jpg);
+    width: 720px;
+    height: 696px;
+    position: absolute;
+    z-index: -1;
+  }
+}

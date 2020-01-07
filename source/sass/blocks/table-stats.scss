@@ -1,12 +1,50 @@
+
+
+.table-stats {
+    @include offset-reset;
+    margin-bottom: 25px;
+}
+
+.table-stats__row {
+    display: flex;
+}
+
 .table-stats__heading {
     font-family: $font;
     font-size: 24px;
     line-height: 24px;
+    text-align: center;
     color: #111;
+    border: 1px solid #cdcdcd;
+    width: 124px;
 }
 
 .table-stats__cell {
+    // width: 54px;
     font-size: 12px;
     line-height: 12px;
     text-align: center;
+}
+
+@media (min-width: $tablet-width) {
+    .table-stats {
+        margin-bottom: 0;
+    }
+}
+
+
+@media (min-width: $desktop-width) {
+    .table-stats {
+        margin-bottom: 50px;
+    }
+
+    .table-stats__heading {
+        font-size: 30px;
+        line-height: 37px;
+    }
+
+    .table-stats__cell {
+        font-size: 14px;
+        line-height: 14px;
+    }
 }
