@@ -1,4 +1,41 @@
+
+.item-data-table {
+    border-spacing: 0;
+}
+
+.item-data-table__row {
+    display: flex;
+    justify-content: space-between;
+    width: 140px;
+}
+
 .item-data-table__cell {
+    @include offset-reset;
     font-size: 12px;
-    line-height: 16px;
+    line-height: 14px;
+}
+
+@media (min-width: $tablet-width) {
+    .item-data-table {
+        margin: 0 auto;
+        margin-bottom: 30px;
+    }
+
+    .item-data-table__row {
+        width: 250px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        border-bottom: 1px solid #d5d5d5;
+    }
+
+    .item-data-table__cell {
+        font-size: 16px;
+        line-height: 16px;
+    }
+}
+
+@media (min-width: $desktop-width) {
+    .item-data-table__row {
+        width: 170px;
+    }
 }

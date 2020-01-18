@@ -2,25 +2,74 @@
     font-family: $font;
     @include heading;
     @include offset-reset;
-
+    padding-top: 20px;
+    padding-bottom: 22px;
+    border-bottom: 1px solid #d5d5d5;
 }
 
 .catalog__list {
     list-style: none;
     @include offset-reset;
+    margin-bottom: 30px;
 }
 
 .catalog__button-description {
+    @include offset-reset;
     font-family: $font;
     font-size: 16px;
     line-height: 20px;
     color: #111;
     text-transform: uppercase;
     text-align: center;
+    margin-bottom: 10px;
+    padding-top: 50px;
 }
 
 .catalog__description {
+    @include offset-reset;
     font-size: 12px;
     line-height: 16px;
     text-align: center;
+    margin-bottom: 20px;
+}
+
+.catalog__link {
+    margin-bottom: 25px;
+}
+
+@media (min-width: $tablet-width) {
+    .catalog__heading {
+        padding: 0;
+        margin-bottom: 155px;
+        font-size: 60px;
+        border-bottom: none;
+    }
+
+    .catalog__list {
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 70px;
+    }
+
+    .catalog__button-description {
+        padding-top: 0;
+        font-size: 20px;
+        line-height: 20px;
+        width: 135px;
+        margin: 0 auto;
+        margin-bottom: 25px;
+    }
+
+    .catalog__description {
+        font-size: 16px;
+        width: 165px;
+        margin: 0 auto;
+        margin-bottom: 80px;
+    }
+}
+
+@media (min-width: $desktop-width) {
+    .catalog__heading {
+        padding-top: 20px;
+    }
 }

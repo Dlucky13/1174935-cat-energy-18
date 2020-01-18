@@ -1,6 +1,31 @@
+.gift {
+    background-image: url("/img/gift-photo-mobile@1x.jpg");
+    padding-top: 190px;
+    padding-bottom: 40px;
+    margin-bottom: 35px;
+}
+
+.gift__text {
+    @include offset-reset;
+    margin: 0 auto;
+}
+
 .gift__text--white {
     font-size: 16px;
     line-height: 20px;
     text-align: center;
     color: #fff;
+    width: 160px;
+}
+
+@media (min-width: $tablet-width) {
+    .gift {
+        padding-top: 75px;
+        padding-bottom: 65px;
+        background-image: url("/img/gift-photo-tablet@1x.jpg");
+    }
+
+    .gift__text {
+        margin-left: 425px;
+    }
 }

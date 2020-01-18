@@ -1,6 +1,7 @@
 .product-list {
     @include offset-reset;
     list-style: none;
+    margin-bottom: 40px;
 }
 
 .product-list__heading {
@@ -11,4 +12,39 @@
     @include offset-reset;
     font-weight: normal;
     text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+.product-list__item {
+    border-top: 1px solid #d5d5d5;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.product-list__item:last-child {
+    border-bottom: 1px solid #d5d5d5;
+}
+
+
+@media(min-width: $tablet-width) {
+    .product-list {
+
+    }
+
+    .product-list__item {
+        display: flex;
+        flex-wrap: wrap;
+        border: 1px solid #d5d5d5;
+        margin-top: -1px;
+        padding-top: 28px;
+        padding-bottom: 28px;
+        padding-right: 38px;
+        padding-left: 38px;
+    }
+
+    .product-list__heading {
+        font-size: 20px;
+        line-height: 20px;
+        margin-right: auto;
+    }
 }

@@ -9,9 +9,38 @@
     text-decoration: none;
 }
 
+.button--catalog {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    border: none;
+    font-size: 20px;
+    line-height: 20px;
+    width: 250px;
+}
+
+.button--show-all-link {
+    display: block;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    background-color: #f2f2f2;
+    color: #444;
+    font-size: 16px;
+    line-height: 20px;
+}
+
 @media (min-width: $tablet-width) {
     .button {
     font-size: 20px;
     line-height: 20px;
+    }
+
+    .button--show-all-link {
+        width: 250px;
+    }
+
+    .button--additional-goods {
+        width: 100%;
     }
 }
